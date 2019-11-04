@@ -84,8 +84,8 @@ body {
   border: none;
   padding: 19px 21px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  margin: 0;
 }
 .navbar-mobile-text:hover, .dropdown:hover .dropbtn {
 
@@ -162,9 +162,13 @@ body {
 	grid-template-columns: 50% 50%;
 	margin: 0 auto 10% auto;
 	padding-top: 6%;
+	align-items: center;
+	vertical-align: middle;
 }
 .grid-title-area {
 	margin: 15% auto 20% 40%;
+/*	align-items: center;
+	vertical-align: middle;*/
 }
 .grid-title {
 	font-weight: 700;
@@ -189,16 +193,16 @@ body {
 	font-size: 1.2em;
 }
 .quem-somos-highlight {
-	background-color: #084D6E;
-	color: #FFFFFF;
+	/*background-color: #084D6E;*/
+	color: #084D6E;
 	font-weight: 600;
 	font-size: 1.2em;
 	padding: 8px 8px;
 	margin-top: 10%;
   margin-right: 50%;
 }
-.yellow-font {
-	color: #EAAA00;
+.logo-resizing {
+	width: 80%;
 }
 
 /*----- Nossos Compromissos -----*/
@@ -343,13 +347,41 @@ body {
 	width: 73%;
 }
 
+.logos-imgs {
+	margin: 10% auto 0 auto;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	align-items: center;
+	vertical-align: middle;
+}
+.grid-left-side {
+	text-align: right;
+	margin-right: 10%;
+}
+.grid-right-side {
+	text-align: left;
+	margin-left: 10%;
+}
+.logo-crea {
+	width: 40%;
+}
+.logo-cra {
+	width: 40%;
+}
+.logo-cadastur {
+	width: 40%;
+}
+.logo-abeoc {
+	width: 35%;
+}
+
 /*----- Footer -----*/
 
 .footer-background {
 	background-color: #084D6E;
 	padding: 8%;
 	text-align: center;
-	margin: 8% auto 0 auto;
+	margin: 3% auto 0 auto;
 }
 /*.footer-grid {
 	display: grid;
@@ -369,34 +401,6 @@ body {
 .footer-icon:active {
 	color: #EAAA00;
 }
-.logos-imgs {
-	margin: auto;
-	/*display: grid;
-	grid-template-columns: 50% 50%;*/
-}
-/*.logo-crea {
-	width: 10%;
-}
-.logo-cra {
-	width: 10%;
-}
-.logo-cadastur {
-	width: 10%;
-}
-.logo-abeoc {
-	width: 10%;
-}*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -492,6 +496,18 @@ body {
 	.contato-img {
     width: 84%;
 	}
+	.logo-crea {
+		width: 25%;
+	}
+	.logo-cra {
+		width: 25%;
+	}
+	.logo-cadastur {
+		width: 25%;
+	}
+	.logo-abeoc {
+		width: 20%;
+	}
 	.footer-icon {
     font-size: 3em;
     margin: 0 22px;
@@ -579,6 +595,18 @@ body {
 	.contato-text {
     font-size: 1.4em;
 	}
+	.logo-crea {
+		width: 30%;
+	}
+	.logo-cra {
+		width: 30%;
+	}
+	.logo-cadastur {
+		width: 30%;
+	}
+	.logo-abeoc {
+		width: 25%;
+	}
 	.footer-icon {
     font-size: 3em;
     margin: 0 22px;
@@ -644,6 +672,18 @@ body {
 	}
 	.contato-img {
     width: 78%;
+	}
+	.logo-crea {
+		width: 50%;
+	}
+	.logo-cra {
+		width: 50%;
+	}
+	.logo-cadastur {
+		width: 50%;
+	}
+	.logo-abeoc {
+		width: 45%;
 	}
 	.footer-icon {
     font-size: 3em;
@@ -805,6 +845,18 @@ body {
 	.contato-img {
     width: 100%;
 	}
+	.logo-crea {
+		width: 50%;
+	}
+	.logo-cra {
+		width: 50%;
+	}
+	.logo-cadastur {
+		width: 50%;
+	}
+	.logo-abeoc {
+		width: 45%;
+	}
 	.footer-icon {
     font-size: 2em;
     margin: 0 15px;
@@ -903,7 +955,7 @@ body {
 		text-align: center;
 	}
 	.img-adjust-mobile {
-		width: 215px;
+		width: 230px;
 	}
 	.nossa-atuacao-title {
 		width: 70%;
@@ -1013,6 +1065,18 @@ body {
 	.contato-img {
     margin-top: 10%;
     width: 100%;
+	}
+	.logo-crea {
+		width: 65%;
+	}
+	.logo-cra {
+		width: 65%;
+	}
+	.logo-cadastur {
+		width: 65%;
+	}
+	.logo-abeoc {
+		width: 60%;
 	}
 	.footer-background {
     padding: 15%;
