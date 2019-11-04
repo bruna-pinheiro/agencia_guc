@@ -1,0 +1,1026 @@
+html {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*----- Home -----*/
+body {
+	margin: 0;
+}
+
+/*----- Navbar -----*/
+.navbar {
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+}
+.navbar-white {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 8px 0px #3F3F3F;  
+}
+.navbar-text {
+	display: inline-block;
+	padding: 1% 3% 0.5% 3%;
+	text-decoration: none;
+	font-weight: 600;
+	color: #084D6E;
+	font-size: 18px;
+	vertical-align: middle;
+}
+.navbar-text:hover {
+	color: #EAAA00;
+}
+.navbar-text:active {
+	color: #EAAA00;
+}
+.logo-img-navbar {
+	width: 165px;
+}
+.navbar-active-link {
+	color: #EAAA00;
+}
+
+/*-----Dropdown Menu-----*/
+
+.navbar-mobile {
+	display: none;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 8px 0px #3F3F3F;  
+}
+.navbar-mobile-text {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 8%;
+  text-decoration: none;
+}
+.dropdown-icon {
+	font-size: 38px;
+	color: #3F3F3F;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+  text-align: left;
+}
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  padding: 19px 21px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.navbar-mobile-text:hover, .dropdown:hover .dropbtn {
+
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 184px;
+  box-shadow: 15px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 2px;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #F0F0F0;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.logo-img-navbar-mobile {
+  width: 100px;
+  z-index: 1;
+  margin-top: 14px;
+}
+
+/*----- Header -----*/
+
+.header-banner {
+	position: relative;
+}
+.banner-picture {
+	top: 0;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	border-bottom: #006a73 solid;
+	border-width: 10px;
+}
+.home-title-mobile {
+	display: none;
+}
+.home-title {
+	display: block;
+	position: absolute;
+	bottom: 50%;
+	margin-bottom: -85px;
+	right: 80px;
+	color: #FFFFFF;
+	text-align: right;
+	font-size: 4.2em;
+}
+.prizes-images-header {
+	position: absolute;
+	bottom: -40px;
+	text-align: center;
+}
+.prize-badges {
+	width: 10%;
+	margin: auto 3%;
+}
+
+/*----- Quem Somos -----*/
+
+.quem-somos-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 0 auto 10% auto;
+	padding-top: 6%;
+}
+.grid-title-area {
+	margin: 15% auto 20% 40%;
+}
+.grid-title {
+	font-weight: 700;
+	font-size: 2.8em;
+	color: #005A73;
+	margin-top: 0;
+}
+.green-yellow-icon {
+	width: 40%;
+	margin: auto 16%;
+}
+.quem-somos-text-area {
+	margin: 10% 40% 10% 0;
+}
+.quem-somos-text {
+	color: #3F3F3F;
+	font-size: 1.2em;
+}
+.quem-somos-text2 {
+	color: #3F3F3F;
+	font-weight: 600;
+	font-size: 1.2em;
+}
+.quem-somos-highlight {
+	background-color: #084D6E;
+	color: #FFFFFF;
+	font-weight: 600;
+	font-size: 1.2em;
+	padding: 8px 8px;
+	margin-top: 10%;
+  margin-right: 50%;
+}
+.yellow-font {
+	color: #EAAA00;
+}
+
+/*----- Nossos Compromissos -----*/
+
+.nossos-compromissos {
+	background: url("../images/textura1.png") repeat scroll;
+	background-size: 100% 100%;
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+.title-responsive {
+	margin: auto;
+}
+.nossos-compromissos-title {
+	width: 40%;
+	margin: 5% 10% 5% 17%;
+}
+.valores-imgs-mobile {
+	display: none;
+}
+.valores-responsive {
+	margin: auto;
+}
+.img-adjust {
+	width: 60%;
+  align-content: center;
+  margin: 0 20% 7% 20%;
+}
+
+/*----- Nossa Atuação -----*/
+
+.atuacao-images {
+
+}
+.nossa-atuacao-title {
+	width: 30%;
+	margin: 15% 10% 5% 17%;
+}
+.map-area-mobile {
+	display: none;
+}
+.map-area {
+	margin: auto;
+}
+.nossa-atuacao-map {
+	width: 90%;
+  margin: auto 5%;
+}
+.atuacao-content-grid {
+	display: grid;
+	grid-template-columns: 48% 48%;
+	grid-gap: 4%;
+	margin: 3% auto;
+}
+.atuacao-text {
+	margin-left: 34%;
+	font-size: 1.1em;
+  line-height: 1.8em;
+  color: #3F3F3F;
+}
+.atuacao-text2 {
+	margin-right: 34%;
+	font-size: 1.1em;
+  line-height: 1.8em;
+  color: #3F3F3F;
+}
+.green-text {
+	color: #179C49;
+	font-weight: 600;
+}
+.highlighted-paragraph-area {
+	margin: 2% auto;
+	text-align: center;
+}
+.highlighted-paragraph {
+	color: #3F3F3F;
+	font-size: 1.6em;
+	margin: auto 27%;
+	font-weight: 600;
+	margin: auto 27% 10% 27%;
+}
+
+/*----- Premiações -----*/
+
+.premiacoes {
+	background: url("../images/textura2.png") repeat scroll;
+	background-size: 100% 100%;
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+.premiacoes-title {
+	width: 30%;
+	margin: 5% 10% 5% 17%;
+}
+.premiacoes-grid-mobile {
+	display: none;
+}
+.premiacoes-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: auto;
+}
+.grid-row-left {
+	text-align: right;
+	margin-right: 7px;
+	margin-top: 7px;
+}
+.grid-row-right {
+	text-align: left;
+	margin-left: 7px;
+	margin-top: 7px;
+}
+.premiacoes-display {
+	width: 65%;
+}
+
+/*----- Contato -----*/
+
+.contato-title {
+	width: 27%;
+	margin: 15% 10% 5% 17%;
+}
+.contato-grid {
+	display: grid;
+	grid-template-columns: 45% 55%;
+	margin: 5% auto;
+}
+.contato-content-area {
+	margin-left: 38%;
+}
+.contato-subtitle {
+	font-weight: 700;
+	font-size: 1.5em;
+	color: #3F3F3F;
+	margin-top: 10%;
+}
+.contato-text {
+	line-height: 10pt;
+	font-size: 1.2em;
+}
+.contato-img {
+	width: 73%;
+}
+
+/*----- Footer -----*/
+
+.footer-background {
+	background-color: #084D6E;
+	padding: 8%;
+	text-align: center;
+	margin: 8% auto 0 auto;
+}
+/*.footer-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}*/
+.footer-icons-area {
+	margin: auto;
+}
+.footer-icon {
+	color: #FFFFFF;
+	font-size: 2.5em;
+	margin: 0 12px;
+}
+.footer-icon:hover {
+	color: #EAAA00;
+}
+.footer-icon:active {
+	color: #EAAA00;
+}
+.logos-imgs {
+	margin: auto;
+	/*display: grid;
+	grid-template-columns: 50% 50%;*/
+}
+/*.logo-crea {
+	width: 10%;
+}
+.logo-cra {
+	width: 10%;
+}
+.logo-cadastur {
+	width: 10%;
+}
+.logo-abeoc {
+	width: 10%;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----Media Queries-----*/
+
+
+/*Widescreen*/
+
+@media only screen and (min-width: 2300px) {
+	.center-content {
+	 	max-width: 1500px;
+		align-content: center;
+	}
+	.navbar-text {
+		font-size: 21px;
+	}
+	.home-title {
+		font-size: 7.2em;
+	}
+	.quem-somos-text-area {
+		margin: 10% 16% 10% 0;
+	}
+	.grid-title-area {
+		margin: 20% auto 20% 27%;
+	}
+	.grid-title {
+		font-size: 3.5em;
+	}
+	.green-yellow-icon {
+    width: 40%;
+    margin: auto 12%;
+	}
+	.quem-somos-text {
+		font-size: 1.8em;
+	}
+	.quem-somos-text2 {
+		font-size: 1.8em;
+	}
+	.quem-somos-highlight {
+		font-size: 1.8em;
+		padding: 9px 29px;
+	}
+	.nossos-compromissos-title {
+		width: 50%;
+		margin: 5% 10% 5% 9%;
+	}
+	.img-adjust {
+    width: 80%;
+    align-content: center;
+    margin: 0 10% 7% 10%;
+	}
+	.nossa-atuacao-title {
+		width: 40%;
+    margin: 15% 10% 5% 9%;
+	}
+	.nossa-atuacao-map {
+    width: 100%;
+    margin: auto 2%;
+	}
+	.atuacao-text {
+    margin-left: 20%;
+    font-size: 1.3em;
+	}
+	.atuacao-text2 {
+    margin-right: 20%;
+    font-size: 1.3em;
+	}
+	.highlighted-paragraph {
+    font-size: 1.8em;
+    margin: auto 30% 10% 30%;
+	}
+	.premiacoes-title {
+		width: 40%;
+		margin: 5% 10% 5% 9%;
+	}
+	.premiacoes-display {
+    width: 50%;
+	}
+	.contato-title {
+		width: 37%;
+		margin: 15% 10% 5% 9%;
+	}
+	.contato-subtitle {
+    font-size: 1.8em;
+	}
+	.contato-text {
+    font-size: 1.4em;
+	}
+	.contato-content-area {
+    margin-left: 20%;
+	}
+	.contato-img {
+    width: 84%;
+	}
+	.footer-icon {
+    font-size: 3em;
+    margin: 0 22px;
+	}
+}
+
+@media screen and (max-width: 2299px) and (min-width: 1600px) {
+	.center-content {
+	 	max-width: 1500px;
+		align-content: center;
+	}
+	.navbar-text {
+		font-size: 21px;
+	}
+	.home-title {
+		font-size: 5.2em;
+	}
+	.quem-somos-text-area {
+		margin: 10% 16% 10% 0;
+	}
+	.grid-title-area {
+		margin: 20% auto 20% 27%;
+	}
+	.grid-title {
+		font-size: 3.3em;
+	}
+	.green-yellow-icon {
+    width: 40%;
+    margin: auto 12%;
+	}
+	.quem-somos-text {
+		font-size: 1.6em;
+	}
+	.quem-somos-text2 {
+		font-size: 1.6em;
+	}
+	.quem-somos-highlight {
+		font-size: 1.6em;
+		padding: 9px 29px;
+	}
+	.nossos-compromissos-title {
+		width: 45%;
+		margin: 5% 10% 5% 16%;
+	}
+	.img-adjust {
+    width: 75%;
+    align-content: center;
+    margin: 0 10% 7% 10%;
+	}
+	.nossa-atuacao-title {
+		width: 35%;
+    margin: 15% 10% 5% 16%;
+	}
+	.nossa-atuacao-map {
+    width: 100%;
+    margin: auto 2%;
+	}
+	.atuacao-text {
+    margin-left: 20%;
+    font-size: 1.3em;
+	}
+	.atuacao-text2 {
+    margin-right: 20%;
+    font-size: 1.3em;
+	}
+	.highlighted-paragraph {
+    font-size: 1.8em;
+    margin: auto 30% 10% 30%;
+	}
+	.premiacoes-title {
+		width: 35%;
+		margin: 5% 10% 5% 16%;
+	}
+	.premiacoes-display {
+    width: 65%;
+    max-width: 600px;
+	}
+	.contato-title {
+		width: 32%;
+		margin: 15% 10% 5% 17%;
+	}
+	.contato-subtitle {
+    font-size: 1.8em;
+	}
+	.contato-text {
+    font-size: 1.4em;
+	}
+	.footer-icon {
+    font-size: 3em;
+    margin: 0 22px;
+	}
+
+}
+
+@media screen and (max-width: 1250px) and (min-width: 1025px) {
+ .navbar-text {
+		padding: 1% 5% 1% 2%;
+		font-size: 15px;
+	}
+	.home-title {
+		font-size: 3em;
+	}
+	.quem-somos-text-area {
+    margin: 10% 30% 10% 0;
+	}
+	.grid-title {
+    font-size: 2.2em;
+    margin-bottom: 16px;
+	}
+	.quem-somos-text {
+    font-size: 1em;
+	}
+	.quem-somos-text2 {
+    font-size: 1em;
+	}
+	.quem-somos-highlight {
+		font-size: 1em;
+		padding: 9px 17px;
+	}
+	.nossos-compromissos-title {
+    margin: 5% 10% 5% 13%;
+	}
+	.nossa-atuacao-title {
+    margin: 15% 10% 5% 13%;
+	}
+	.premiacoes-title {
+    margin: 5% 10% 5% 13%;
+	}
+	.premiacoes-display {
+    width: 76%;
+	}
+	.img-adjust {
+    width: 75%;
+    margin: 0 12.3% 7% 12.5%;
+	}
+	.highlighted-paragraph {
+    margin: auto 19% 10% 19%;
+	}
+	.contato-title {
+    margin: 15% 10% 5% 13%;
+	}
+	.contato-content-area {
+    margin-left: 28%;
+	}
+	.contato-subtitle {
+    font-size: 1.3em;
+	}
+	.contato-text {
+    font-size: 1em;
+	}
+	.contato-img {
+    width: 78%;
+	}
+	.footer-icon {
+    font-size: 3em;
+    margin: 0 22px;
+	}
+	 
+}
+@media screen and (max-width: 1024px) and (min-width: 650px) {
+ 	.navbar-text {
+		padding: 1% 3% 1% 3%;
+		font-size: 14px;
+	}
+	.logo-img-navbar {
+    width: 120px;
+	}
+	.header-banner {
+		position: relative;
+		padding: 83px 0 0 0;
+	}
+	.home-title-mobile {
+		display: block;
+		font-size: 3em;
+		position: absolute;
+		bottom: 50%;
+		margin-bottom: -130px;
+		right: 80px;
+		color: #FFFFFF;
+		text-align: right;
+	}
+	.home-title {
+		display: none;
+	}
+	.prize-badges {
+    width: 13%;
+    margin: auto 3%;
+	}
+	.grid-title-area {
+    margin: 24% auto 20% 19%;
+	}
+	.quem-somos-text-area {
+    margin: 10% 19% 10% 0;
+	}
+	.grid-title {
+    font-size: 2.2em;
+    margin-bottom: 16px;
+	}
+	.quem-somos-text {
+    font-size: 1em;
+    line-height: 1.8em;
+	}
+	.quem-somos-text2 {
+    font-size: 1em;
+    line-height: 1.8em;
+	}
+	.quem-somos-highlight {
+		font-size: 1em;
+		padding: 9px 13px;
+		margin-right: 45%;
+	}
+	.nossos-compromissos-title {
+		width: 50%;
+    margin: 5% 10% 5% 10%;
+	}
+	.img-adjust {
+    width: 84%;
+    margin: 0 8% 7% 8%;
+	}
+	.nossa-atuacao-title {
+		width: 40%;
+    margin: 15% 10% 5% 10%;
+	}
+	.nossa-atuacao-map {
+    width: 100%;
+    margin: auto 0;
+	}
+	.atuacao-text {
+    margin-left: 16%;
+    font-size: 1em;
+	}
+	.atuacao-text2 {
+    margin-right: 16%;
+    font-size: 1em;
+	}
+	.highlighted-paragraph {
+    font-size: 1.2em;
+    margin: auto 19% 10% 19%;
+	}
+	.premiacoes-title {
+		width: 40%;
+    margin: 5% 10% 5% 10%;
+	}
+	.premiacoes-grid {
+		display: none;
+	}
+	.premiacoes-grid-mobile {
+		width: 83%;
+	  height: 100%;
+	  display: flex;
+	  overflow-x: auto;
+	  margin-left: 10%;
+	  margin-right: 10%;
+	  -webkit-overflow-scrolling: touch;
+	  scroll-snap-type: x mandatory;
+	  scroll-behavior: smooth;
+	}
+	.premiacoes-display {
+    width: 90%;
+	}
+	.slide {
+	  width: 100%;
+	  flex-shrink: 0;
+	  height: 100%;
+	}
+	.premiacoes-grid-mobile > div {
+  	scroll-snap-align: start;
+	}
+	.slide-wrap {
+		text-align: center;
+		margin-top: 25px;
+	}
+	.slide-buttons {
+		text-align: center;
+		margin-top: 25px;
+	}
+	.slide-btn {
+    background-color: #084D6E;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #FFFFFF;
+    padding: 0 10px;
+    margin: 0 3px;
+	}
+	@supports (scroll-snap-type) {
+	  .premiacoes > a {
+	    display: none;
+	  }
+	}
+	.slide-btn:hover {
+	  transform: scale(0.8);
+   	background-color: #009B3A;
+	}
+	.slide-btn:active {
+	  transform: scale(0.8);
+   	background-color: #009B3A;
+	}
+
+	.contato-title {
+    margin: 15% 10% 5% 13%;
+	}
+	.contato-content-area {
+    margin-left: 16%;
+	}
+	.contato-subtitle {
+    font-size: 1.2em;
+	}
+	.contato-text {
+    font-size: 1em;
+	}
+	.contato-img {
+    width: 100%;
+	}
+	.footer-icon {
+    font-size: 2em;
+    margin: 0 15px;
+	}
+	 
+}
+
+@media screen and (max-width: 649px) and (min-width: 320px) {
+ 	.navbar-mobile {
+		display: grid;
+		grid-template-columns: 33.3% 33.3% 33.3%;
+		margin: 0 auto;
+	}
+
+ 	.navbar {
+		display: none;
+	}
+	.navbar-text {
+		padding: 1% 3% 1% 3%;
+		font-size: 14px;
+	}
+	.logo-img-navbar {
+    width: 120px;
+	}
+	.header-banner {
+		position: relative;
+		padding: 83px 0 0 0;
+	}
+	.banner-picture {
+    border-width: 5px;
+	}
+	.home-title-mobile {
+    display: block;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -92px;
+    right: 33px;
+    color: #FFFFFF;
+    text-align: right;
+	}
+	.home-title {
+		display: none;
+	}
+	.prizes-images-header {
+    bottom: -17px;
+	}
+	.prize-badges {
+    width: 15%;
+    margin: auto 3%;
+	}
+	.quem-somos-grid {
+		display: grid;
+		grid-template-columns: 100%;
+		margin: 5% auto 10% auto;
+	}
+	.grid-title-area {
+    margin: 24% auto 5% auto;
+    text-align: center;
+	}
+	.quem-somos-text-area {
+    margin: 0 10% 10% 10%;
+	}
+	.grid-title {
+    font-size: 1.8em;
+    margin-bottom: 16px;
+	}
+	.green-yellow-icon {
+    width: 32%;
+	}
+	.quem-somos-text {
+    font-size: 1em;
+    line-height: 1.8em;
+	}
+	.quem-somos-text2 {
+    font-size: 1em;
+    line-height: 1.8em;
+	}
+	.quem-somos-highlight {
+		font-size: 1em;
+		padding: 9px 13px;
+		margin-right: 34%;
+	}
+	.nossos-compromissos {
+    background-size: auto 100%;
+	}
+	.nossos-compromissos-title {
+    width: 80%;
+    margin: 5% 10% 15% 10%;
+	}
+	.valores-imgs {
+		display: none;
+	}
+	.valores-imgs-mobile {
+		display: block;
+		text-align: center;
+	}
+	.img-adjust-mobile {
+		width: 215px;
+	}
+	.nossa-atuacao-title {
+		width: 70%;
+    margin: 15% 10% 5% 10%;
+	}
+	.map-area {
+		display: none;
+	}
+	.map-area-mobile {
+		display: block;
+	}
+	.nossa-atuacao-map-mobile {
+    width: 100%;
+    margin: auto 0;
+	}
+	.atuacao-content-grid {
+    grid-template-columns: 100%;
+    grid-gap: 2%;
+    margin: 3% auto;
+	}
+	.atuacao-text {
+    font-size: 0.8em;
+    margin: auto 10%;
+	}
+	.atuacao-text2 {
+    font-size: 0.8em;
+    margin: auto 10%;
+	}
+	.highlighted-paragraph {
+    margin: 10% 10% 10% 10%;
+    font-size: 0.9em;
+	}
+	.premiacoes-title {
+		width: 70%;
+    margin: 5% 10% 10% 10%;
+	}
+	.premiacoes-grid {
+		display: none;
+	}
+	.premiacoes-grid-mobile {
+		width: 80%;
+	  height: 100%;
+	  display: flex;
+	  overflow-x: auto;
+	  margin-left: 10%;
+	  margin-right: 10%;
+	  -webkit-overflow-scrolling: touch;
+	  scroll-snap-type: x mandatory;
+	  scroll-behavior: smooth;
+	}
+	.premiacoes-display {
+    width: 95%;
+	}
+	.slide {
+	  width: 100%;
+	  flex-shrink: 0;
+	  height: 100%;
+	}
+	.premiacoes-grid-mobile > div {
+  	scroll-snap-align: start;
+	}
+	.slide-wrap {
+		text-align: center;
+		margin-top: 25px;
+	}
+	.slide-buttons {
+		text-align: center;
+		margin-top: 25px;
+	}
+	.slide-btn {
+    background-color: #084D6E;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #FFFFFF;
+    padding: 0 10px;
+    margin: 0 3px;
+	}
+	@supports (scroll-snap-type) {
+	  .premiacoes > a {
+	    display: none;
+	  }
+	}
+	.slide-btn:hover {
+	  transform: scale(0.8);
+   	background-color: #009B3A;
+	}
+	.slide-btn:active {
+	  transform: scale(0.8);
+   	background-color: #009B3A;
+	}
+	.contato-title {
+		width: 57%;
+    margin: 15% 10% 5% 10%;
+	}
+	.contato-grid {
+    grid-template-columns: 100%;
+	}
+	.contato-content-area {
+    margin: auto 10%;
+	}
+	.contato-subtitle {
+    font-size: 1em;
+	}
+	.contato-text {
+    font-size: 0.8em;
+	}
+	.contato-img {
+    margin-top: 10%;
+    width: 100%;
+	}
+	.footer-background {
+    padding: 15%;
+	}
+	.footer-icon {
+    font-size: 1.5em;
+    margin: 0 10px;
+	}
+
+	 
+}
