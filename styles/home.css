@@ -149,6 +149,7 @@ body {
 	position: absolute;
 	bottom: -40px;
 	text-align: center;
+	width: 100%;
 }
 .prize-badges {
 	width: 10%;
@@ -224,7 +225,7 @@ body {
 }
 .nossos-compromissos-title {
 	width: 40%;
-	margin: 5% 10% 5% 10%;
+	margin: 5% 10% 5% 17%;
 	opacity: 0;
 	transition: opacity 2s ease;
 	-webkit-transition: left, opacity 2s ease;
@@ -238,10 +239,39 @@ body {
 .valores-responsive {
 	margin: auto;
 }
+
 .img-adjust {
 	width: 60%;
   align-content: center;
-  margin: 0 20% 7% 20%;
+  margin: 0 20% 0 20%;
+}
+
+.visao-animation {
+	opacity: 0;
+	transition: opacity 2s ease;
+	transition-delay: 3s;
+	-webkit-transition: left, opacity 2s ease;
+}
+.visao-animation.is-visible {
+	opacity: 2;
+}
+.missao-animation {
+	opacity: 0;
+	transition: opacity 2s ease;
+	transition-delay: 5s;
+	-webkit-transition: left, opacity 2s ease;
+}
+.missao-animation.is-visible {
+	opacity: 2;
+}
+.principios-animation {
+	opacity: 0;
+	transition: opacity 2s ease;
+	transition-delay: 7s;
+	-webkit-transition: left, opacity 2s ease;
+}
+.principios-animation.is-visible {
+	opacity: 2;
 }
 
 /*----- Nossa Atuação -----*/
@@ -259,30 +289,6 @@ body {
 .nossa-atuacao-title.is-visible {
 	opacity: 2;
 }
-.fade {
-	-webkit-animation: fade 4s;
-  animation: fade 4s;
-  -moz-animation: fade 4s;
-  -o-animation: fade 4s;
-}
-@-webkit-keyframes fade {
-	0% {opacity: 0} 
-	100% {opacity:1}
-}
-
-@-moz-keyframes fade{
-  0% {opacity: 0} 
-	100% {opacity:1}
-}
-
-@keyframes fade {
-  0% {opacity: 0} 
-	100% {opacity:1}
-    }
-@-o-keyframes fade {
-	0% {opacity: 0} 
-	100% {opacity:1}
-}
 .map-area-mobile {
 	display: none;
 }
@@ -292,6 +298,12 @@ body {
 .nossa-atuacao-map {
 	width: 90%;
   margin: auto 5%;
+  transition: opacity 2s ease;
+	transition-delay: 5s;
+	-webkit-transition: left, opacity 2s ease;
+}
+.nossa-atuacao-map.is-visible {
+	opacity: 2;
 }
 .atuacao-content-grid {
 	display: grid;
@@ -372,6 +384,43 @@ body {
 .premiacoes-display {
 	width: 65%;
 }
+.animation-2011 {
+	opacity: 0;
+	transition: opacity 2s ease;
+	transition-delay: 3s;
+	-webkit-transition: left, opacity 2s ease;
+}
+.animation-2011.is-visible {
+	opacity: 2;
+}
+.animation-2012 {
+	opacity: 0;
+	transition: opacity 2s ease;
+	transition-delay: 5s;
+	-webkit-transition: left, opacity 2s ease;
+}
+.animation-2012.is-visible {
+	opacity: 2;
+}
+.animation-2014 {
+	opacity: 0;
+	transition: opacity 2s ease;
+	transition-delay: 7s;
+	-webkit-transition: left, opacity 2s ease;
+}
+.animation-2014.is-visible {
+	opacity: 2;
+}
+.animation-2016 {
+	opacity: 0;
+	transition: opacity 2s ease;
+	transition-delay: 9s;
+	-webkit-transition: left, opacity 2s ease;
+}
+.animation-2016.is-visible {
+	opacity: 2;
+}
+
 
 /*----- Contato -----*/
 
@@ -511,7 +560,7 @@ body {
 	.img-adjust {
     width: 80%;
     align-content: center;
-    margin: 0 10% 7% 10%;
+    margin: 0 10% 0 10%;
 	}
 	.nossa-atuacao-title {
 		width: 40%;
@@ -615,7 +664,7 @@ body {
 	.img-adjust {
     width: 75%;
     align-content: center;
-    margin: 0 10% 7% 10%;
+    margin: 0 10% 0 10%;
 	}
 	.nossa-atuacao-title {
 		width: 35%;
@@ -713,7 +762,7 @@ body {
 	}
 	.img-adjust {
     width: 75%;
-    margin: 0 12.3% 7% 12.5%;
+    margin: 0 12.3% 0 12.5%;
 	}
 	.highlighted-paragraph {
     margin: auto 19% 10% 19%;
@@ -809,7 +858,7 @@ body {
 	}
 	.img-adjust {
     width: 84%;
-    margin: 0 8% 7% 8%;
+    margin: 0 8% 0 8%;
 	}
 	.nossa-atuacao-title {
 		width: 40%;
