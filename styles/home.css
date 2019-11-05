@@ -203,6 +203,12 @@ body {
 }
 .logo-resizing {
 	width: 80%;
+	opacity: 0;
+	transition: opacity 2s ease;
+	-webkit-transition: left, opacity 2s ease;
+}
+.logo-resizing.is-visible {
+	opacity: 2;
 }
 
 /*----- Nossos Compromissos -----*/
@@ -218,7 +224,13 @@ body {
 }
 .nossos-compromissos-title {
 	width: 40%;
-	margin: 5% 10% 5% 17%;
+	margin: 5% 10% 5% 10%;
+	opacity: 0;
+	transition: opacity 2s ease;
+	-webkit-transition: left, opacity 2s ease;
+}
+.nossos-compromissos-title.is-visible {
+	opacity: 2;
 }
 .valores-imgs-mobile {
 	display: none;
@@ -240,6 +252,36 @@ body {
 .nossa-atuacao-title {
 	width: 30%;
 	margin: 15% 10% 5% 17%;
+	opacity: 0;
+	transition: opacity 2s ease;
+	-webkit-transition: left, opacity 2s ease;
+}
+.nossa-atuacao-title.is-visible {
+	opacity: 2;
+}
+.fade {
+	-webkit-animation: fade 4s;
+  animation: fade 4s;
+  -moz-animation: fade 4s;
+  -o-animation: fade 4s;
+}
+@-webkit-keyframes fade {
+	0% {opacity: 0} 
+	100% {opacity:1}
+}
+
+@-moz-keyframes fade{
+  0% {opacity: 0} 
+	100% {opacity:1}
+}
+
+@keyframes fade {
+  0% {opacity: 0} 
+	100% {opacity:1}
+    }
+@-o-keyframes fade {
+	0% {opacity: 0} 
+	100% {opacity:1}
 }
 .map-area-mobile {
 	display: none;
@@ -290,6 +332,9 @@ body {
 
 /*----- Premiações -----*/
 
+.slideshow-container {
+	display: none;
+}
 .premiacoes {
 	background: url("../images/textura2.png") repeat scroll;
 	background-size: 100% 100%;
@@ -299,6 +344,12 @@ body {
 .premiacoes-title {
 	width: 30%;
 	margin: 5% 10% 5% 17%;
+	opacity: 0;
+	transition: opacity 2s ease;
+	-webkit-transition: left, opacity 2s ease;
+}
+.premiacoes-title.is-visible {
+	opacity: 2;
 }
 .premiacoes-grid-mobile {
 	display: none;
@@ -327,6 +378,12 @@ body {
 .contato-title {
 	width: 27%;
 	margin: 15% 10% 5% 17%;
+	opacity: 0;
+	transition: opacity 2s ease;
+	-webkit-transition: left, opacity 2s ease;
+}
+.contato-title.is-visible {
+	opacity: 2;
 }
 .contato-grid {
 	display: grid;
@@ -781,56 +838,88 @@ body {
 	.premiacoes-grid {
 		display: none;
 	}
-	.premiacoes-grid-mobile {
-		width: 83%;
-	  height: 100%;
-	  display: flex;
-	  overflow-x: auto;
-	  margin-left: 10%;
-	  margin-right: 10%;
-	  -webkit-overflow-scrolling: touch;
-	  scroll-snap-type: x mandatory;
-	  scroll-behavior: smooth;
+
+
+	.slideshow-container {
+		display: block;
+    max-width: 1000px;
+    position: relative;
+    margin: auto 10%;
 	}
-	.premiacoes-display {
-    width: 90%;
+
+	.mySlides {
+    display: none;
+    width: 80%;
+    margin: auto 10%;
+	  height: auto;
+	  border: none;
+	     
 	}
-	.slide {
-	  width: 100%;
-	  flex-shrink: 0;
-	  height: 100%;
+
+	.prev,
+	.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -22px -10px auto -10px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
 	}
-	.premiacoes-grid-mobile > div {
-  	scroll-snap-align: start;
+
+	.next {
+    right: 10px;
+    border-radius: 3px 3px 3px 3px
 	}
-	.slide-wrap {
-		text-align: center;
-		margin-top: 25px;
+
+	.prev {
+    left: 10px;
+    border-radius: 3px 3px 3px 3px
 	}
-	.slide-buttons {
-		text-align: center;
-		margin-top: 25px;
+
+	.prev:hover,
+	.next:hover {
+    color: #EAAA00;
 	}
-	.slide-btn {
-    background-color: #084D6E;
-    text-decoration: none;
+
+	/*.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 12px;
+	  padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428
+	}*/
+
+	.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+	}
+
+	.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
     border-radius: 50%;
-    color: #FFFFFF;
-    padding: 0 10px;
-    margin: 0 3px;
+    display: inline-block;
+    transition: background-color .6s ease
 	}
-	@supports (scroll-snap-type) {
-	  .premiacoes > a {
-	    display: none;
-	  }
-	}
-	.slide-btn:hover {
-	  transform: scale(0.8);
-   	background-color: #009B3A;
-	}
-	.slide-btn:active {
-	  transform: scale(0.8);
-   	background-color: #009B3A;
+
+	.active,
+	.dot:hover {
+	  background-color: #717171
 	}
 
 	.contato-title {
@@ -998,57 +1087,89 @@ body {
 	.premiacoes-grid {
 		display: none;
 	}
-	.premiacoes-grid-mobile {
-		width: 80%;
-	  height: 100%;
-	  display: flex;
-	  overflow-x: auto;
-	  margin-left: 10%;
-	  margin-right: 10%;
-	  -webkit-overflow-scrolling: touch;
-	  scroll-snap-type: x mandatory;
-	  scroll-behavior: smooth;
+
+	.slideshow-container {
+		display: block;
+    max-width: 1000px;
+    position: relative;
+    margin: auto 10%;
 	}
-	.premiacoes-display {
-    width: 95%;
+
+	.mySlides {
+    display: none;
+    width: 90%;
+    margin: auto 5%;
+	  height: auto;
+	  border: none;
+	     
 	}
-	.slide {
-	  width: 100%;
-	  flex-shrink: 0;
-	  height: 100%;
+
+	.prev,
+	.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -22px -40px auto -40px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
 	}
-	.premiacoes-grid-mobile > div {
-  	scroll-snap-align: start;
+
+	.next {
+    right: 10px;
+    border-radius: 3px 3px 3px 3px
 	}
-	.slide-wrap {
-		text-align: center;
-		margin-top: 25px;
+
+	.prev {
+    left: 10px;
+    border-radius: 3px 3px 3px 3px
 	}
-	.slide-buttons {
-		text-align: center;
-		margin-top: 25px;
+
+	.prev:hover,
+	.next:hover {
+    color: #EAAA00;
 	}
-	.slide-btn {
-    background-color: #084D6E;
-    text-decoration: none;
+
+	/*.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 12px;
+	  padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428
+	}*/
+
+	.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+	}
+
+	.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
     border-radius: 50%;
-    color: #FFFFFF;
-    padding: 0 10px;
-    margin: 0 3px;
+    display: inline-block;
+    transition: background-color .6s ease
 	}
-	@supports (scroll-snap-type) {
-	  .premiacoes > a {
-	    display: none;
-	  }
+
+	.active,
+	.dot:hover {
+	  background-color: #717171
 	}
-	.slide-btn:hover {
-	  transform: scale(0.8);
-   	background-color: #009B3A;
-	}
-	.slide-btn:active {
-	  transform: scale(0.8);
-   	background-color: #009B3A;
-	}
+
 	.contato-title {
 		width: 57%;
     margin: 15% 10% 5% 10%;

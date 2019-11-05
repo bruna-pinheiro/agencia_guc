@@ -45,7 +45,7 @@
 				<div class="header-banner">
 					<img src="images/banner_img.jpg" class="banner-picture">
 					<div class="header-title">
-						<h1 class="home-title center-content">Presença mundial na<br>organização de eventos</h1>
+						<h1 class="home-title center-content fade">Presença mundial na<br>organização de eventos</h1>
 						<h1 class="home-title-mobile">Presença mundial na<br>organização de<br>eventos</h1>
 					</div>
 					<div class="prizes-images-header">
@@ -68,12 +68,12 @@
 						<p class="quem-somos-text">Constituida em 1991 a Gauche Eventos confirmou sua personalidade de constante modernização e  repaginou sua marca, apostando na clareza, charme, modernidade, estilo e internacionalidade.</p>
 						<p class="quem-somos-text2">Sem nunca esquecer nossa brasilidade.</p>
 						<p class="quem-somos-highlight">Agora somos</p>
-						<img src="images/logo_official.png" class="logo-resizing">
+						<img src="images/logo_official.png" class="logo-resizing show-on-scroll">
 					</div>
 				</div>
 				<div class="nossos-compromissos">
 					<div class="title-responsive center-content">
-						<img src="images/nossos_compromissos.png" class="nossos-compromissos-title">
+						<img src="images/nossos_compromissos.png" class="nossos-compromissos-title show-on-scroll">
 					</div>
 					<div class="valores-imgs">
 						<div class="valores-responsive center-content">
@@ -92,7 +92,7 @@
 				<div class="nossa-atuacao">
 					<div class="atuacao-images">
 						<div class="title-responsive center-content">
-							<img src="images/nossa_atuacao.png" class="nossa-atuacao-title center-content">
+							<img src="images/nossa_atuacao.png" class="nossa-atuacao-title center-content show-on-scroll">
 						</div>
 						<div class="map-area center-content">
 							<img src="images/mapa.png" class="nossa-atuacao-map">
@@ -121,7 +121,7 @@
 			<section id="premiacoes-section" class="premiacoes-section">
 				<div class="premiacoes">
 					<div class="title-responsive center-content">
-						<img src="images/premiacoes.png" class="premiacoes-title">
+						<img src="images/premiacoes.png" class="premiacoes-title show-on-scroll">
 					</div>
 					<div class="premiacoes-grid">
 						<div class="grid-row-left">
@@ -139,30 +139,38 @@
 					</div>
 
 
+					
+					<div class="slideshow-container">
+						<div class="slideshow-inner">
+					  	<div class="mySlides fade">
+						    <img  src='images/premiacoes_2011.png' style='width: 100%;' alt="sally lightfoot crab"/>
+<!-- 						    <div class="text">Sally Lightfoot Crab</div> -->
+					  	</div>
+						  <div class="mySlides fade">
+						    <img  src='images/premiacoes_2012.png' style='width: 100%;' alt="fighting nazca boobies"/>
+<!-- 						    <div class="text">A scuffle between two Nazca Boobies</div> -->
+						  </div>
+						  <div class="mySlides fade">
+						    <img  src='images/premiacoes_2014.png' style='width: 100%;' alt="otovalo waterfall"/>
+<!-- 						    <div class="text">A waterfall discovered on a hike in Otovalo</div> -->
+						  </div>
+					  	<div class="mySlides fade">
+						    <img  src='images/premiacoes_2016.png' style='width: 100%;' alt="pelican"/>
+<!-- 						    <div class="text">Pelican</div> -->
+						  </div>
+					  </div>
+					  <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+					  <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+					</div>
+					<br/>
 
+					<div style='text-align: center;'>
+					  <span class="dot" onclick='currentSlide(1)'></span>
+					  <span class="dot" onclick='currentSlide(2)'></span>
+					  <span class="dot" onclick='currentSlide(3)'></span>
+					  <span class="dot" onclick='currentSlide(4)'></span>
+					</div>
 
-
-					<div class="slide-wrap">
-						<div class="premiacoes-grid-mobile">
-							<div class="slide" id="slide-1">
-								<img src="images/premiacoes_2011.png" class="premiacoes-display">
-							</div>
-							<div class="slide" id="slide-2">
-								<img src="images/premiacoes_2012.png" class="premiacoes-display">
-							</div>
-							<div class="slide" id="slide-3">
-								<img src="images/premiacoes_2014.png" class="premiacoes-display">
-							</div>
-							<div class="slide" id="slide-4">
-								<img src="images/premiacoes_2016.png" class="premiacoes-display">
-							</div>
-						</div>
-						<div class="slide-buttons">
-							<a href="#slide-1" class="slide-btn"></a>
-							<a href="#slide-2" class="slide-btn"></a>
-							<a href="#slide-3" class="slide-btn"></a>
-							<a href="#slide-4" class="slide-btn"></a>
-						</div>
 					</div>
 
 				</div>
@@ -170,7 +178,7 @@
 			<section id="contato-section" class="contato-section">
 				<div class="contato">
 					<div class="title-responsive center-content">
-						<img src="images/contato.png" class="contato-title">
+						<img src="images/contato.png" class="contato-title show-on-scroll">
 					</div>
 				</div>
 				<div class="contato-grid center-content">
@@ -234,6 +242,124 @@
 
 	<!-- </div> -->
 </body>
+
+
+<script>
+
+	var slideIndex = 1;
+
+	var myTimer;
+
+	var slideshowContainer;
+
+	window.addEventListener("load",function() {
+	    showSlides(slideIndex);
+	    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+	  
+	    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+	    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+	  
+	    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+	    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+	  
+	    slideshowContainer.addEventListener('mouseenter', pause)
+	    slideshowContainer.addEventListener('mouseleave', resume)
+	})
+
+	// NEXT AND PREVIOUS CONTROL
+	function plusSlides(n){
+	  clearInterval(myTimer);
+	  if (n < 0){
+	    showSlides(slideIndex -= 1);
+	  } else {
+	   showSlides(slideIndex += 1); 
+	  }
+	  
+	  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+	  
+	  if (n === -1){
+	    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+	  } else {
+	    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+	  }
+	}
+
+	//Controls the current slide and resets interval if needed
+	function currentSlide(n){
+	  clearInterval(myTimer);
+	  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n){
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	}
+
+	pause = () => {
+	  clearInterval(myTimer);
+	}
+
+	resume = () =>{
+	  clearInterval(myTimer);
+	  myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+	}
+
+
+// Title Transitions
+
+// Detect request animation frame
+var scroll = window.requestAnimationFrame ||
+             // IE Fallback
+             function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+
+function loop() {
+
+    Array.prototype.forEach.call(elementsToShow, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+      } else {
+        element.classList.remove('is-visible');
+      }
+    });
+
+    scroll(loop);
+}
+
+// Call the loop for the first time
+loop();
+
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
+</script>
 
 <!-- <script type="text/javascript">
 	$.fn.isInViewport = function() {
