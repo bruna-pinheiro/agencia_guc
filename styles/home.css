@@ -127,7 +127,7 @@ body {
 .banner-picture {
 	top: 0;
 	max-width: 100%;
-	width: auto;
+	width: 100%;
 	height: auto;
 	border-bottom: #006a73 solid;
 	border-width: 10px;
@@ -144,6 +144,12 @@ body {
 	color: #FFFFFF;
 	text-align: right;
 	font-size: 4.2em;
+	opacity: 0;
+	transition: opacity 2s ease;
+	-webkit-transition: left, opacity 2s ease;
+}
+.home-title.is-visible {
+	opacity: 2;
 }
 .prizes-images-header {
 	position: absolute;
@@ -194,7 +200,6 @@ body {
 	font-size: 1.2em;
 }
 .quem-somos-highlight {
-	/*background-color: #084D6E;*/
 	color: #084D6E;
 	font-weight: 600;
 	font-size: 1.2em;
@@ -492,10 +497,6 @@ body {
 	text-align: center;
 	margin: 3% auto 0 auto;
 }
-/*.footer-grid {
-	display: grid;
-	grid-template-columns: 50% 50%;
-}*/
 .footer-icons-area {
 	margin: auto;
 }
@@ -510,9 +511,6 @@ body {
 .footer-icon:active {
 	color: #EAAA00;
 }
-
-
-
 
 /*-----Media Queries-----*/
 
@@ -887,24 +885,19 @@ body {
 	.premiacoes-grid {
 		display: none;
 	}
-
-
 	.slideshow-container {
 		display: block;
     max-width: 1000px;
     position: relative;
     margin: auto 10%;
 	}
-
 	.mySlides {
     display: none;
     width: 80%;
     margin: auto 10%;
 	  height: auto;
-	  border: none;
-	     
+	  border: none;  
 	}
-
 	.prev,
 	.next {
     cursor: pointer;
@@ -919,22 +912,18 @@ body {
     transition: .6s ease;
     border-radius: 0 3px 3px 0
 	}
-
 	.next {
     right: 10px;
     border-radius: 3px 3px 3px 3px
 	}
-
 	.prev {
     left: 10px;
     border-radius: 3px 3px 3px 3px
 	}
-
 	.prev:hover,
 	.next:hover {
     color: #EAAA00;
 	}
-
 	/*.text {
     color: #f2f2f2;
     font-size: 15px;
@@ -946,7 +935,6 @@ body {
     text-align: center;
     background-color: #222428
 	}*/
-
 	.numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -954,7 +942,6 @@ body {
     position: absolute;
     top: 0
 	}
-
 	.dot {
     cursor: pointer;
     height: 15px;
@@ -965,12 +952,10 @@ body {
     display: inline-block;
     transition: background-color .6s ease
 	}
-
 	.active,
 	.dot:hover {
 	  background-color: #717171
 	}
-
 	.contato-title {
     margin: 15% 10% 5% 13%;
 	}
@@ -1011,7 +996,6 @@ body {
 		grid-template-columns: 33.3% 33.3% 33.3%;
 		margin: 0 auto;
 	}
-
  	.navbar {
 		display: none;
 	}
@@ -1038,7 +1022,14 @@ body {
     right: 33px;
     color: #FFFFFF;
     text-align: right;
+    opacity: 0;
+		transition: opacity 2s ease;
+		-webkit-transition: left, opacity 2s ease;
 	}
+	.home-title-mobile.is-visible {
+		opacity: 2;
+	}
+	
 	.home-title {
 		display: none;
 	}
@@ -1136,14 +1127,12 @@ body {
 	.premiacoes-grid {
 		display: none;
 	}
-
 	.slideshow-container {
 		display: block;
     max-width: 1000px;
     position: relative;
     margin: auto 10%;
 	}
-
 	.mySlides {
     display: none;
     width: 90%;
@@ -1152,7 +1141,6 @@ body {
 	  border: none;
 	     
 	}
-
 	.prev,
 	.next {
     cursor: pointer;
@@ -1167,22 +1155,18 @@ body {
     transition: .6s ease;
     border-radius: 0 3px 3px 0
 	}
-
 	.next {
     right: 10px;
     border-radius: 3px 3px 3px 3px
 	}
-
 	.prev {
     left: 10px;
     border-radius: 3px 3px 3px 3px
 	}
-
 	.prev:hover,
 	.next:hover {
     color: #EAAA00;
 	}
-
 	/*.text {
     color: #f2f2f2;
     font-size: 15px;
@@ -1194,7 +1178,6 @@ body {
     text-align: center;
     background-color: #222428
 	}*/
-
 	.numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -1202,7 +1185,6 @@ body {
     position: absolute;
     top: 0
 	}
-
 	.dot {
     cursor: pointer;
     height: 15px;
@@ -1213,12 +1195,10 @@ body {
     display: inline-block;
     transition: background-color .6s ease
 	}
-
 	.active,
 	.dot:hover {
 	  background-color: #717171
 	}
-
 	.contato-title {
 		width: 57%;
     margin: 15% 10% 5% 10%;
@@ -1257,7 +1237,5 @@ body {
 	.footer-icon {
     font-size: 1.5em;
     margin: 0 10px;
-	}
-
-	 
+	} 
 }
