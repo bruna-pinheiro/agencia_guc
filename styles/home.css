@@ -128,7 +128,7 @@ body {
 	top: 0;
 	max-width: 100%;
 	width: 100%;
-	height: auto;
+	height: 807px;
 	border-bottom: #006a73 solid;
 	border-width: 10px;
 }
@@ -246,9 +246,9 @@ body {
 }
 
 .img-adjust {
-	width: 60%;
+	width: 55%;
   align-content: center;
-  margin: 0 20% 0 20%;
+  margin: -8px 22.5% -8px 22.5%;
 }
 
 .visao-animation {
@@ -525,6 +525,9 @@ body {
 	.navbar-text {
 		font-size: 21px;
 	}
+	.banner-picture {
+    height: 1455px;
+	}
 	.home-title {
 		font-size: 7.2em;
 	}
@@ -556,9 +559,9 @@ body {
 		margin: 5% 10% 5% 9%;
 	}
 	.img-adjust {
-    width: 80%;
+    width: 75%;
     align-content: center;
-    margin: 0 10% 0 10%;
+    margin: -10px 12.5% -10px 12.5%;
 	}
 	.nossa-atuacao-title {
 		width: 40%;
@@ -628,6 +631,9 @@ body {
 	}
 	.navbar-text {
 		font-size: 21px;
+	}
+	.banner-picture {
+    height: 1000px;
 	}
 	.home-title {
 		font-size: 5.2em;
@@ -759,8 +765,9 @@ body {
     width: 76%;
 	}
 	.img-adjust {
-    width: 75%;
-    margin: 0 12.3% 0 12.5%;
+		width: 55%;
+	  align-content: center;
+	  margin: -8px 22.5% -8px 22.5%;
 	}
 	.highlighted-paragraph {
     margin: auto 19% 10% 19%;
@@ -1012,6 +1019,7 @@ body {
 	}
 	.banner-picture {
     border-width: 5px;
+    height: 400px;
 	}
 	.home-title-mobile {
     display: block;
@@ -1046,7 +1054,7 @@ body {
 		margin: 5% auto 10% auto;
 	}
 	.grid-title-area {
-    margin: 24% auto 5% auto;
+    margin: 5% auto 5% auto;
     text-align: center;
 	}
 	.quem-somos-text-area {
