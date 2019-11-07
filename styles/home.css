@@ -21,6 +21,7 @@ body {
 	right: 0;
 	margin: auto;
 	z-index: 1;
+	height: 113px;
 }
 .navbar-white {
 	background: #FFFFFF;
@@ -60,6 +61,7 @@ body {
 	z-index: 1;
 	background-color: #FFFFFF;
 	box-shadow: 0px 0px 8px 0px #3F3F3F;  
+	height: 75px;
 }
 .navbar-mobile-text {
   font-size: 16px;
@@ -71,7 +73,7 @@ body {
 .dropdown-icon {
 	font-size: 38px;
 	color: #3F3F3F;
-	padding-top: 5px;
+	padding-top: 0;
 	padding-left: 5px;
 }
 .dropdown {
@@ -114,7 +116,7 @@ body {
   display: block;
 }
 .logo-img-navbar-mobile {
-  width: 90px;
+  width:85px;
   z-index: 1;
   margin-top: 14px;
 }
@@ -123,14 +125,10 @@ body {
 
 .header-banner {
 	position: relative;
-}
-.banner-picture {
-	top: 0;
-	max-width: 100%;
-	width: 100%;
-	height: 807px;
-	border-bottom: #006a73 solid;
-	border-width: 10px;
+	background-image: url("../images/banner_img.jpg");
+	background-size: cover;
+  	background-position: center;
+  	height: 100vh;
 }
 .home-title-mobile {
 	display: none;
@@ -167,13 +165,14 @@ body {
 .quem-somos-grid {
 	display: grid;
 	grid-template-columns: 50% 50%;
-	margin: 0 auto 10% auto;
-	padding-top: 6%;
+	margin: 0 auto;
+	/*padding-top: 6%;*/
 	align-items: center;
 	vertical-align: middle;
+	height: calc(100vh - 100px);
 }
 .grid-title-area {
-	margin: 15% auto 20% 40%;
+	margin: 0 auto 0 40%;
 /*	align-items: center;
 	vertical-align: middle;*/
 }
@@ -188,7 +187,7 @@ body {
 	margin: auto 16%;
 }
 .quem-somos-text-area {
-	margin: 10% 40% 10% 0;
+	margin: 0 40% 0 0;
 }
 .quem-somos-text {
 	color: #3F3F3F;
@@ -222,15 +221,16 @@ body {
 .nossos-compromissos {
 	background: url("../images/textura1.png") repeat scroll;
 	background-size: 100% 100%;
-	padding-top: 5%;
+	padding-top: 0;
 	padding-bottom: 10%;
+	height: 100vh;
 }
 .title-responsive {
 	margin: auto;
 }
 .nossos-compromissos-title {
 	width: 40%;
-	margin: 5% 10% 5% 17%;
+	margin: 0 10% 5% 17%;
 	opacity: 0;
 	transition: opacity 2s ease;
 	-webkit-transition: left, opacity 2s ease;
@@ -245,6 +245,9 @@ body {
 	margin: auto;
 }
 
+.img-adjust-wide {
+	display: none;
+}
 .img-adjust {
 	width: 55%;
   align-content: center;
@@ -355,8 +358,9 @@ body {
 .premiacoes {
 	background: url("../images/textura2.png") repeat scroll;
 	background-size: 100% 100%;
-	padding-top: 5%;
+	padding-top: 3%;
 	padding-bottom: 10%;
+	height: 100vh;
 }
 .premiacoes-title {
 	width: 30%;
@@ -559,9 +563,13 @@ body {
 		margin: 5% 10% 5% 9%;
 	}
 	.img-adjust {
-    width: 75%;
+    display: none;
+	}
+	.img-adjust-wide {
+		display: block;
+		width: 80%;
     align-content: center;
-    margin: -10px 12.5% -10px 12.5%;
+    margin: -10px 10% -10px 10%;
 	}
 	.nossa-atuacao-title {
 		width: 40%;
@@ -1052,6 +1060,7 @@ body {
 		display: grid;
 		grid-template-columns: 100%;
 		margin: 5% auto 10% auto;
+		height: auto;
 	}
 	.grid-title-area {
     margin: 5% auto 5% auto;
@@ -1079,6 +1088,9 @@ body {
 		font-size: 1em;
 		padding: 9px 13px;
 		margin-right: 34%;
+	}
+	.nossos-compromissos {
+		height: auto;
 	}
 	.nossos-compromissos {
     background-size: auto 100%;
@@ -1127,6 +1139,10 @@ body {
 	.highlighted-paragraph {
     margin: 10% 10% 10% 10%;
     font-size: 0.9em;
+	}
+	.premiacoes {
+		height: auto;
+	}
 	}
 	.premiacoes-title {
 		width: 70%;
