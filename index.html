@@ -40,11 +40,11 @@
 		</nav>
 
 		<header>
-			<section id="home-section" class="home">
+			<section id="home-section">
 				<div class="header-banner">
 					<div class="header-title">
 						<h1 class="home-title center-content show-on-scroll">Presença mundial na<br>organização de eventos</h1>
-						<h1 class="home-title-mobile show-on-scroll">Presença mundial na<br>organização de<br>eventos</h1>
+						<h1 class="home-title-mobile show-on-scroll">Presença mundial<br>na organização<br>de eventos</h1>
 					</div>
 					<div class="prizes-images-header show-on-scroll">
 						<img src="images/caio_2011.png" class="prize-badges">
@@ -56,7 +56,7 @@
 			</section>
 		</header>
 		<main>
-			<section id="quemsomos-section" class="quem-somos-section">
+			<section id="quemsomos-section">
 				<div class="quem-somos-grid center-content">
 					<div class="grid-title-area">
 						<p class="grid-title">Quem Somos</p>
@@ -76,15 +76,12 @@
 					<div class="valores-imgs">
 						<div class="valores-responsive center-content">
 							<div>
-								<img src="images/visao.png" class="img-adjust visao-animation show-on-scroll">
 								<img src="images/visao_wide.png" class="img-adjust-wide visao-animation show-on-scroll">
 							</div>
 							<div>
-								<img src="images/missao.png" class="img-adjust missao-animation show-on-scroll">
 								<img src="images/missao_wide.png" class="img-adjust-wide missao-animation show-on-scroll">
 							</div>
 							<div>
-								<img src="images/principios.png" class="img-adjust principios-animation show-on-scroll">
 								<img src="images/principios_wide.png" class="img-adjust-wide principios-animation show-on-scroll">
 							</div>
 						</div>
@@ -98,7 +95,7 @@
 					</div>
 				</div>
 				<div class="nossa-atuacao">
-					<div class="atuacao-images">
+					<div>
 						<div class="title-responsive center-content">
 							<img src="images/nossa_atuacao.png" class="nossa-atuacao-title center-content show-on-scroll">
 						</div>
@@ -149,19 +146,15 @@
 						<div class="slideshow-inner">
 					  	<div class="mySlides fade">
 						    <img  src='images/premiacoes_2011.png' style='width: 100%;' alt="sally lightfoot crab"/>
-<!-- 						    <div class="text">Sally Lightfoot Crab</div> -->
 					  	</div>
 						  <div class="mySlides fade">
 						    <img  src='images/premiacoes_2012.png' style='width: 100%;' alt="fighting nazca boobies"/>
-<!-- 						    <div class="text">A scuffle between two Nazca Boobies</div> -->
 						  </div>
 						  <div class="mySlides fade">
 						    <img  src='images/premiacoes_2014.png' style='width: 100%;' alt="otovalo waterfall"/>
-<!-- 						    <div class="text">A waterfall discovered on a hike in Otovalo</div> -->
 						  </div>
 					  	<div class="mySlides fade">
 						    <img  src='images/premiacoes_2016.png' style='width: 100%;' alt="pelican"/>
-<!-- 						    <div class="text">Pelican</div> -->
 						  </div>
 					  </div>
 					  <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
@@ -239,17 +232,14 @@
 	    showSlides(slideIndex);
 	    myTimer = setInterval(function(){plusSlides(1)}, 4000);
 	  
-	    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
 	    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
-	  
-	    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-	    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+
 	  
 	    slideshowContainer.addEventListener('mouseenter', pause)
 	    slideshowContainer.addEventListener('mouseleave', resume)
 	})
 
-	// NEXT AND PREVIOUS CONTROL
+
 	function plusSlides(n){
 	  clearInterval(myTimer);
 	  if (n < 0){
@@ -257,8 +247,6 @@
 	  } else {
 	   showSlides(slideIndex += 1); 
 	  }
-	  
-	  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
 	  
 	  if (n === -1){
 	    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
@@ -343,40 +331,3 @@ function isElementInViewport(el) {
   );
 }
 </script>
-
-<!-- <script type="text/javascript">
-	$.fn.isInViewport = function() {
-	  var elementTop = $(this).offset().top;
-	  // console.log("Element Top: " + elementTop);
-	  var elementBottom = elementTop + $(this).outerHeight();
-	  // console.log("Element Bottom: " + elementBottom);
-
-	  var viewportTop = $(window).scrollTop();
-	  // console.log("Viewport Top: " + viewportTop);
-	  var viewportBottom = viewportTop + $(window).height();
-	  // console.log("Viewport Bottom: " + viewportBottom);
-
-	  return elementBottom > viewportTop && elementTop < viewportBottom;
-	};
-
-	$(window).on('resize scroll', function() {
-	  $('section').each(function() {
-	    var sectionId = $(this).attr('id');
-	    if ($(this).isInViewport()) {
-	      $('#navbar-' + sectionId + '-link').addClass('navbar-active-link');
-	    } else {
-	      $('#navbar-' + sectionId + '-link').removeClass('navbar-active-link');
-	    }
-	  });
-
-	  $('.slide').each(function() {
-	    var slideId = $(this).attr('id');
-	    if ($(this).isInViewport()) {
-	    	console.log(slideId);
-	      // $('#navbar-' + slideId + '-link').addClass('navbar-active-link');
-	    } else {
-	      // $('#navbar-' + slideId + '-link').removeClass('navbar-active-link');
-	    }
-	  });
-	});
-</script> -->

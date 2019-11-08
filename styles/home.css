@@ -21,7 +21,7 @@ body {
 	right: 0;
 	margin: auto;
 	z-index: 1;
-	height: 113px;
+	height: 95px;
 }
 .navbar-white {
 	background: #FFFFFF;
@@ -166,15 +166,12 @@ body {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	margin: 0 auto;
-	/*padding-top: 6%;*/
 	align-items: center;
 	vertical-align: middle;
 	height: calc(100vh - 100px);
 }
 .grid-title-area {
 	margin: 0 auto 0 40%;
-/*	align-items: center;
-	vertical-align: middle;*/
 }
 .grid-title {
 	font-weight: 700;
@@ -230,7 +227,7 @@ body {
 }
 .nossos-compromissos-title {
 	width: 40%;
-	margin: 0 10% 5% 17%;
+	margin: 5% 10% 5% 17%;
 	opacity: 0;
 	transition: opacity 2s ease;
 	-webkit-transition: left, opacity 2s ease;
@@ -244,16 +241,11 @@ body {
 .valores-responsive {
 	margin: auto;
 }
-
 .img-adjust-wide {
-	display: none;
-}
-.img-adjust {
-	width: 55%;
+  width: 56%;
   align-content: center;
-  margin: -8px 22.5% -8px 22.5%;
+  margin: -14px 22% -14px 22%;
 }
-
 .visao-animation {
 	opacity: 0;
 	transition: opacity 2s ease;
@@ -284,9 +276,6 @@ body {
 
 /*----- Nossa Atuação -----*/
 
-.atuacao-images {
-
-}
 .nossa-atuacao-title {
 	width: 30%;
 	margin: 15% 10% 5% 17%;
@@ -304,8 +293,8 @@ body {
 	margin: auto;
 }
 .nossa-atuacao-map {
-	width: 90%;
-  margin: auto 5%;
+	width: 80%;
+  margin: auto 10%;
   transition: opacity 2s ease;
 	transition-delay: 5s;
 	-webkit-transition: left, opacity 2s ease;
@@ -358,13 +347,13 @@ body {
 .premiacoes {
 	background: url("../images/textura2.png") repeat scroll;
 	background-size: 100% 100%;
-	padding-top: 3%;
+	padding-top: 0;
 	padding-bottom: 10%;
 	height: 100vh;
 }
 .premiacoes-title {
 	width: 30%;
-	margin: 5% 10% 5% 17%;
+	margin: 3% 10% 3% 17%;
 	opacity: 0;
 	transition: opacity 2s ease;
 	-webkit-transition: left, opacity 2s ease;
@@ -391,7 +380,7 @@ body {
 	margin-top: 7px;
 }
 .premiacoes-display {
-	width: 65%;
+	width: 60%;
 }
 .animation-2011 {
 	opacity: 0;
@@ -526,6 +515,9 @@ body {
 	 	max-width: 1500px;
 		align-content: center;
 	}
+	.navbar {
+    height: 118px;
+	}
 	.navbar-text {
 		font-size: 21px;
 	}
@@ -562,11 +554,7 @@ body {
 		width: 50%;
 		margin: 5% 10% 5% 9%;
 	}
-	.img-adjust {
-    display: none;
-	}
 	.img-adjust-wide {
-		display: block;
 		width: 80%;
     align-content: center;
     margin: -10px 10% -10px 10%;
@@ -671,27 +659,27 @@ body {
 	}
 	.nossos-compromissos-title {
 		width: 45%;
-		margin: 5% 10% 5% 16%;
+		margin: 3% 10% 5% 16%;
 	}
-	.img-adjust {
-    width: 75%;
+	.img-adjust-wide {
+    width: 60%;
     align-content: center;
-    margin: 0 10% 0 10%;
+    margin: -25px 20% 0 20%;
 	}
 	.nossa-atuacao-title {
 		width: 35%;
     margin: 15% 10% 5% 16%;
 	}
 	.nossa-atuacao-map {
-    width: 100%;
-    margin: auto 2%;
+    width: 90%;
+    margin: auto 5% auto 5%;
 	}
 	.atuacao-text {
-    margin-left: 20%;
+    margin-left: 30%;
     font-size: 1.3em;
 	}
 	.atuacao-text2 {
-    margin-right: 20%;
+    margin-right: 30%;
     font-size: 1.3em;
 	}
 	.highlighted-paragraph {
@@ -703,7 +691,7 @@ body {
 		margin: 5% 10% 5% 16%;
 	}
 	.premiacoes-display {
-    width: 65%;
+    width: 55%;
     max-width: 600px;
 	}
 	.contato-title {
@@ -772,7 +760,7 @@ body {
 	.premiacoes-display {
     width: 76%;
 	}
-	.img-adjust {
+	.img-adjust-wide {
 		width: 55%;
 	  align-content: center;
 	  margin: -8px 22.5% -8px 22.5%;
@@ -813,7 +801,10 @@ body {
 	}
 	 
 }
-@media screen and (max-width: 1024px) and (min-width: 650px) {
+@media screen and (max-width: 1024px) and (min-width: 900px) {
+ 	.navbar {
+    height: 90px;
+	}
  	.navbar-text {
 		padding: 1% 3% 1% 3%;
 		font-size: 14px;
@@ -827,7 +818,7 @@ body {
 	}
 	.home-title-mobile {
 		display: block;
-		font-size: 3em;
+		font-size: 3.8em;
 		position: absolute;
 		bottom: 50%;
 		margin-bottom: -130px;
@@ -852,6 +843,9 @@ body {
     font-size: 2.2em;
     margin-bottom: 16px;
 	}
+	.quem-somos-grid {
+    height: auto;
+	}
 	.quem-somos-text {
     font-size: 1em;
     line-height: 1.8em;
@@ -865,13 +859,17 @@ body {
 		padding: 9px 13px;
 		margin-right: 45%;
 	}
+	.nossos-compromissos {
+		height: auto;
+	}
 	.nossos-compromissos-title {
 		width: 50%;
     margin: 5% 10% 5% 10%;
 	}
-	.img-adjust {
-    width: 84%;
-    margin: 0 8% 0 8%;
+	.img-adjust-wide {
+    width: 85%;
+    align-content: center;
+    margin: -14px 7.5% -14px 7.5%;
 	}
 	.nossa-atuacao-title {
 		width: 40%;
@@ -892,6 +890,9 @@ body {
 	.highlighted-paragraph {
     font-size: 1.2em;
     margin: auto 19% 10% 19%;
+	}
+	.premiacoes {
+		height: auto;
 	}
 	.premiacoes-title {
 		width: 40%;
@@ -1004,6 +1005,199 @@ body {
 	}
 	 
 }
+@media screen and (max-width: 899px) and (min-width: 650px) {
+ 	.navbar {
+    height: 90px;
+	}
+ 	.navbar-text {
+		padding: 1% 3% 1% 3%;
+		font-size: 14px;
+	}
+	.logo-img-navbar {
+    width: 120px;
+	}
+	.header-banner {
+		position: relative;
+		padding: 83px 0 0 0;
+	}
+	.home-title-mobile {
+		display: block;
+		font-size: 3.7em;
+		position: absolute;
+		bottom: 50%;
+		margin-bottom: -130px;
+		right: 80px;
+		color: #FFFFFF;
+		text-align: right;
+	}
+	.home-title {
+		display: none;
+	}
+	.prize-badges {
+    width: 13%;
+    margin: auto 3%;
+	}
+	.grid-title-area {
+    margin: 24% auto 20% 19%;
+	}
+	.quem-somos-grid {
+    height: auto;
+	}
+	.quem-somos-text-area {
+    margin: 10% 19% 10% 0;
+	}
+	.grid-title {
+    font-size: 2.2em;
+    margin-bottom: 16px;
+	}
+	.quem-somos-text {
+    font-size: 1em;
+    line-height: 1.8em;
+	}
+	.quem-somos-text2 {
+    font-size: 1em;
+    line-height: 1.8em;
+	}
+	.quem-somos-highlight {
+		font-size: 1em;
+		padding: 9px 13px;
+		margin-right: 45%;
+	}
+	.nossos-compromissos {
+		height: auto;
+	}
+	.nossos-compromissos-title {
+		width: 50%;
+    margin: 5% 10% 5% 10%;
+	}
+	.img-adjust-wide {
+    width: 85%;
+    align-content: center;
+    margin: -14px 7.5% -14px 7.5%;
+	}
+	.nossa-atuacao-title {
+		width: 40%;
+    margin: 15% 10% 5% 10%;
+	}
+	.nossa-atuacao-map {
+    width: 100%;
+    margin: auto 0;
+	}
+	.atuacao-text {
+    margin-left: 16%;
+    font-size: 1em;
+	}
+	.atuacao-text2 {
+    margin-right: 16%;
+    font-size: 1em;
+	}
+	.highlighted-paragraph {
+    font-size: 1.2em;
+    margin: auto 19% 10% 19%;
+	}
+	.premiacoes {
+		height: auto;
+	}
+	.premiacoes-title {
+		width: 40%;
+    margin: 5% 10% 5% 10%;
+	}
+	.premiacoes-grid {
+		display: none;
+	}
+	.slideshow-container {
+		display: block;
+    max-width: 1000px;
+    position: relative;
+    margin: auto 10%;
+	}
+	.mySlides {
+    display: none;
+    width: 80%;
+    margin: auto 10%;
+	  height: auto;
+	  border: none;  
+	}
+	.prev,
+	.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -22px -10px auto -10px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+	}
+	.next {
+    right: 10px;
+    border-radius: 3px 3px 3px 3px
+	}
+	.prev {
+    left: 10px;
+    border-radius: 3px 3px 3px 3px
+	}
+	.prev:hover,
+	.next:hover {
+    color: #EAAA00;
+	}
+	.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+	}
+	.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+	}
+	.active,
+	.dot:hover {
+	  background-color: #717171
+	}
+	.contato-title {
+    margin: 15% 10% 5% 13%;
+	}
+	.contato-content-area {
+    margin-left: 16%;
+	}
+	.contato-subtitle {
+    font-size: 1.2em;
+	}
+	.contato-text {
+    font-size: 1em;
+	}
+	.contato-img {
+    width: 100%;
+	}
+	.logo-crea {
+		width: 50%;
+	}
+	.logo-cra {
+		width: 50%;
+	}
+	.logo-cadastur {
+		width: 50%;
+	}
+	.logo-abeoc {
+		width: 45%;
+	}
+	.footer-icon {
+    font-size: 2em;
+    margin: 0 15px;
+	}
+	 
+}
 
 @media screen and (max-width: 649px) and (min-width: 320px) {
  	.navbar-mobile {
@@ -1018,9 +1212,6 @@ body {
 		padding: 1% 3% 1% 3%;
 		font-size: 14px;
 	}
-	/*.logo-img-navbar {
-    width: 120px;
-	}*/
 	.header-banner {
 		position: relative;
 		padding: 83px 0 0 0;
@@ -1031,7 +1222,7 @@ body {
 	}
 	.home-title-mobile {
     display: block;
-    font-size: 1.5em;
+    font-size: 2.2em;
     position: absolute;
     bottom: 50%;
     margin-bottom: -92px;
@@ -1070,11 +1261,14 @@ body {
     margin: 0 10% 10% 10%;
 	}
 	.grid-title {
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: 16px;
 	}
 	.green-yellow-icon {
     width: 32%;
+	}
+	.logo-resizing {
+    width: 70%;
 	}
 	.quem-somos-text {
     font-size: 1em;
@@ -1190,17 +1384,6 @@ body {
 	.next:hover {
     color: #EAAA00;
 	}
-	/*.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding-top: 12px;
-	  padding-bottom: 12px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #222428
-	}*/
 	.numbertext {
     color: #f2f2f2;
     font-size: 12px;
