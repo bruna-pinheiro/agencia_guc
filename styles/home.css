@@ -227,7 +227,7 @@ body {
 }
 .nossos-compromissos-title {
 	width: 40%;
-	margin: 5% 10% 5% 17%;
+	margin: 2% 10% 5% 17%;
 	opacity: 0;
 	transition: opacity 2s ease;
 	-webkit-transition: left, opacity 2s ease;
@@ -242,9 +242,9 @@ body {
 	margin: auto;
 }
 .img-adjust-wide {
-  width: 56%;
+  width: 50%;
   align-content: center;
-  margin: -14px 22% -14px 22%;
+  margin: -14px 25% -14px 25%;
 }
 .visao-animation {
 	opacity: 0;
@@ -380,7 +380,7 @@ body {
 	margin-top: 7px;
 }
 .premiacoes-display {
-	width: 60%;
+	width: 52%;
 }
 .animation-2011 {
 	opacity: 0;
@@ -552,7 +552,7 @@ body {
 	}
 	.nossos-compromissos-title {
 		width: 50%;
-		margin: 5% 10% 5% 9%;
+		margin: 10% 10% 5% 9%;
 	}
 	.img-adjust-wide {
 		width: 80%;
@@ -581,7 +581,7 @@ body {
 	}
 	.premiacoes-title {
 		width: 40%;
-		margin: 5% 10% 5% 9%;
+		margin: 10% 10% 5% 9%;
 	}
 	.premiacoes-display {
     width: 50%;
