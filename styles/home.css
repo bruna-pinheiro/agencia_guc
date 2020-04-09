@@ -226,7 +226,6 @@ body {
 	background-size: 100% 100%;
 	padding-top: 0;
 	padding-bottom: 10%;
-	/*height: 100vh;*/
 }
 .title-responsive {
 	margin: auto;
@@ -337,12 +336,89 @@ body {
 .highlighted-paragraph {
 	color: #3F3F3F;
 	font-size: 1.6em;
-	margin: auto 27%;
 	font-weight: 600;
-	margin: auto 27% 10% 27%;
+	margin: auto 27% 6% 27%;
 }
 .bold-text {
 	font-weight: 600;
+}
+
+/*----- Nossos Clientes ------*/
+.clients-area-title {
+	margin: 2% auto;
+	text-align: center;
+}
+.clients-title {
+	color: #084D6E;
+	font-size: 2em;
+	font-weight: 700;
+	margin: auto;
+}
+.clients-slideshow {
+	display: block;
+  max-width: 1000px;
+  position: relative;
+  margin: 5% auto 10% auto;
+}
+.mySlides {
+  display: none;
+  width: 80%;
+  margin: auto 10%;
+  height: auto;
+  border: none;  
+}
+.mySlidesAwards {
+  display: none;
+  width: 80%;
+  margin: auto 10%;
+  height: auto;
+  border: none;  
+}
+
+.nossos-clientes-grid {
+	display: inline-grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 150px 150px;
+	width: 100%;
+	justify-items: center;
+	align-items: center;
+}
+.client-logo-img {
+	width: 70%;
+	height: auto;
+}
+.pnud-adjust {
+	width: 30%;
+}
+
+.clients-prev,
+.clients-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin: -22px -10px auto -10px;
+  padding: 16px;
+  color: #222428;
+  font-weight: bold;
+  font-size: 30px;
+  transition: .6s ease-in-out;
+  border-radius: 0 3px 3px 0
+}
+.clients-next {
+  right: 10px;
+  border-radius: 3px 3px 3px 3px
+}
+.clients-prev {
+  left: 10px;
+  border-radius: 3px 3px 3px 3px
+}
+.clients-prev:hover,
+.clients-next:hover {
+  color: #EAAA00;
+}
+.active {
+  background-color: #717171
 }
 
 /*----- Portfolio -----*/
@@ -442,8 +518,6 @@ body {
 	margin-bottom: 13px;
 }
 
-
-
 /*----- Premiações -----*/
 
 .slideshow-container {
@@ -454,7 +528,6 @@ body {
 	background-size: 100% 100%;
 	padding-top: 0;
 	padding-bottom: 10%;
-	/*height: 100vh;*/
 }
 .premiacoes-title {
 	width: 30%;
@@ -558,7 +631,6 @@ body {
 .contato-img {
 	width: 73%;
 }
-
 .logos-imgs {
 	margin: 10% auto 10% auto;
 	display: grid;
@@ -682,7 +754,14 @@ body {
 	}
 	.highlighted-paragraph {
     font-size: 1.5em;
-    margin: auto 30% 10% 30%;
+    margin: auto 30% 5% 30%;
+	}
+	.clients-title {
+		font-size: 2.5em;
+		margin: auto 27% auto 27%;
+	}
+	.nossos-clientes-grid {
+		grid-template-rows: 200px 200px;
 	}
 	.portfolio-btns {
 		padding: 19%;
@@ -804,7 +883,14 @@ body {
 	}
 	.highlighted-paragraph {
     font-size: 1.8em;
-    margin: auto 30% 10% 30%;
+    margin: auto 30% 5% 30%;
+	}
+	.clients-title {
+		font-size: 2.5em;
+		margin: auto;
+	}
+	.nossos-clientes-grid {
+		grid-template-rows: 200px 200px;
 	}
 	.premiacoes-title {
 		width: 35%;
@@ -987,9 +1073,6 @@ body {
 		padding: 9px 13px;
 		margin-right: 45%;
 	}
-/*	.nossos-compromissos {
-		height: auto;
-	}*/
 	.nossos-compromissos-title {
 		width: 50%;
     margin: 5% 10% 5% 10%;
@@ -1083,14 +1166,7 @@ body {
 	.next:hover {
     color: #EAAA00;
 	}
-	.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0
-	}
-	.dot {
+	.dotAwards {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -1101,9 +1177,10 @@ body {
     transition: background-color .6s ease
 	}
 	.active,
-	.dot:hover {
+	.dotAwards:hover {
 	  background-color: #717171
 	}
+
 	.contato-title {
     margin: 15% 10% 5% 13%;
 	}
@@ -1192,9 +1269,6 @@ body {
 		padding: 9px 13px;
 		margin-right: 45%;
 	}
-/*	.nossos-compromissos {
-		height: auto;
-	}*/
 	.nossos-compromissos-title {
 		width: 50%;
     margin: 5% 10% 5% 10%;
@@ -1223,6 +1297,15 @@ body {
 	.highlighted-paragraph {
     font-size: 1.2em;
     margin: auto 19% 10% 19%;
+	}
+	.clients-title {
+		font-size: 1.70em;
+	}
+	.nossos-clientes-grid {
+		grid-template-rows: 150px 150px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 	}
 	.portfolio-btns {
 		padding: 14%;
@@ -1288,14 +1371,7 @@ body {
 	.next:hover {
     color: #EAAA00;
 	}
-	.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0
-	}
-	.dot {
+	.dotAwards {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -1306,7 +1382,7 @@ body {
     transition: background-color .6s ease
 	}
 	.active,
-	.dot:hover {
+	.dotAwards:hover {
 	  background-color: #717171
 	}
 	.contato-title {
@@ -1380,7 +1456,6 @@ body {
 	.home-title-mobile.is-visible {
 		opacity: 2;
 	}
-	
 	.home-title {
 		display: none;
 	}
@@ -1427,9 +1502,6 @@ body {
 		padding: 9px 13px;
 		margin-right: 34%;
 	}
-/*	.nossos-compromissos {
-		height: auto;
-	}*/
 	.nossos-compromissos {
     background-size: auto 100%;
 	}
@@ -1478,12 +1550,21 @@ body {
     margin: 10% 10% 10% 10%;
     font-size: 0.9em;
 	}
+	.clients-title {
+		font-size: 1em;
+	}
+	.nossos-clientes-grid {
+		grid-template-rows: 90px 90px;
+    width: 100%;
+	}
+	.clients-prev, .clients-next {
+		display: none !important;
+	}
 	.portfolio-grid {
 		display: grid;
 		grid-template-columns: 100%;
 		grid-template-rows: 21% 21% 21% 21% 21%;
 		grid-template-areas: "top-left" "top-right" "middle-left" "middle-right" "bottom";
-/*		grid-row-gap: 8px;*/
 		margin-bottom: 50%;
 	}
 	.eventos-exterior {
@@ -1536,6 +1617,13 @@ body {
 	  height: auto;
 	  border: none; 
 	}
+	.mySlidesAwards {
+    display: none;
+    width: 95%;
+    margin: auto 2.5%;
+	  height: auto;
+	  border: none; 
+	}
 	.prev,
 	.next {
     cursor: pointer;
@@ -1561,27 +1649,6 @@ body {
 	.prev:hover,
 	.next:hover {
     color: #EAAA00;
-	}
-	.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0
-	}
-	.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color .6s ease
-	}
-	.active,
-	.dot:hover {
-	  background-color: #717171
 	}
 	.contato-title {
 		width: 57%;
